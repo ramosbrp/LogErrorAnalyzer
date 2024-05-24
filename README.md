@@ -45,6 +45,21 @@ Para executar a aplicação, você deve fornecer o caminho para o arquivo de log
 dotnet run -- "caminho/para/seu/logfile.log" "caminho/para/output.txt"
 ```
 
+### Resultado Esperado
+O arquivo de saída gerado terá os hashes agrupados pelo banco de dados inicial (RealmInicial), como mostrado no exemplo abaixo:
+
+```bash
+banco_de_dados_1
+"C6232E367A58899A3CDD55E742618FF2", 
+"B084E28BF1CA1E9319F76289BE5ADDCC", 
+"40EEF17D78966AEA894B70636B61C433",
+
+banco_de_dados_2 
+"C56D46BA838AC1A6E426D102F4FD9C07", 
+"3133553BC7E2684FE51112A1A3EE749F", 
+...
+```
+
 ### Estrutura do Projeto
 O projeto tem a seguinte estrutura:
 ```bash
