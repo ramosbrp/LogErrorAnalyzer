@@ -1,7 +1,19 @@
 ﻿using LogErrorAnalyzer;
 
-string logFilePath = "D:/Documents/dev/bendig-bits/LogErrorAnalyzer/log.md";
-string outputFilePath = "D:/Documents/dev/bendig-bits/LogErrorAnalyzer/output.txt";
+
+
+//string logFilePath = "D:/Documents/dev/bendig-bits/LogErrorAnalyzer/log.md";
+//string outputFilePath = "D:/Documents/dev/bendig-bits/LogErrorAnalyzer/output.txt";
+
+
+if (args.Length < 2)
+{
+    Console.WriteLine("Usage: dotnet run <path_to_log_file> <output_file>");
+    return;
+}
+
+string logFilePath = args[0]; // Primeiro argumento: caminho para o arquivo de log
+string outputFilePath = args[1]; // Segundo argumento: caminho para o arquivo de saída
 
 if (!File.Exists(logFilePath))
 {
