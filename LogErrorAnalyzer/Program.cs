@@ -1,7 +1,7 @@
 ﻿using LogErrorAnalyzer;
 
 string logFilePath = "D:/Documents/dev/bendig-bits/LogErrorAnalyzer/log.md";
-string outputFilePath = "output.txt";
+string outputFilePath = "D:/Documents/dev/bendig-bits/LogErrorAnalyzer/output.txt";
 
 if (!File.Exists(logFilePath))
 {
