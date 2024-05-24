@@ -20,42 +20,50 @@ LogErrorAnalyzer é uma aplicação de console .NET que analisa arquivos de log 
 Primeiro, clone o repositório do projeto para o seu ambiente local.
 
 ```bash
-git clone https://github.com/seu-usuario/LogErrorAnalyzer.git
+bash git clone https://github.com/seu-usuario/LogErrorAnalyzer.git
+```
+```bash
 cd LogErrorAnalyzer
+```
 
 
 ### Passo 2: Restaurar Dependências
 Restaure as dependências do projeto.
+```bash
 dotnet restore
+```
 
 
-###Passo 3: Compilar o Projeto
+### Passo 3: Compilar o Projeto
 Compile o projeto para garantir que todos os arquivos estejam configurados corretamente.
 dotnet build
 
 
-##Passo 4: Executar a Aplicação
+### Passo 4: Executar a Aplicação
 Para executar a aplicação, você deve fornecer o caminho para o arquivo de log e o caminho para o arquivo de saída onde os resultados serão salvos.
+```bash
 dotnet run -- "caminho/para/seu/logfile.log" "caminho/para/output.txt"
+```
 
-###Estrutura do Projeto
+### Estrutura do Projeto
 O projeto tem a seguinte estrutura:
-
+```bash
 LogErrorAnalyzer/
 ├── LogErrorAnalyzer.csproj
 ├── Program.cs
 ├── LogProcessor.cs
 ├── Block.cs
 └── README.md
+```
 
-###Explicação do Código
-Program.cs: Contém o método principal que executa a lógica de análise de log e processamento dos resultados.
-LogProcessor.cs: Classe responsável por processar o arquivo de log, identificar blocos de processamento e extrair informações relevantes.
-Block.cs: Classe que representa um bloco de processamento no arquivo de log.
+### Explicação do Código
+##### Program.cs: Contém o método principal que executa a lógica de análise de log e processamento dos resultados.
+##### LogProcessor.cs: Classe responsável por processar o arquivo de log, identificar blocos de processamento e extrair informações relevantes.
+##### Block.cs: Classe que representa um bloco de processamento no arquivo de log.
 
 
 
-Licença
+### Licença
 Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
 
