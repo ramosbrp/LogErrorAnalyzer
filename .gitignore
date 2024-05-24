@@ -1,0 +1,30 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/LogErrorAnalyzer
+
+# Compiled binary artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.vs/
+.idea/
+*.sln.ide/
+
+# Other files
+*.swp
+*.tmp
+*.temp
